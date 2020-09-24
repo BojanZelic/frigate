@@ -1,6 +1,6 @@
 FROM jrottenberg/ffmpeg:4.1-nvidia
 LABEL maintainer "blakeb@blakeshome.com"
-
+ENTRYPOINT []
 ENV DEBIAN_FRONTEND=noninteractive
 # Install packages for apt repo
 RUN apt -qq update && apt -qq install --no-install-recommends -y \
